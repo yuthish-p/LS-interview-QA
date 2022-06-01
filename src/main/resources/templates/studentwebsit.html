@@ -1,0 +1,91 @@
+<html>
+    <head>
+
+        <title> Student website</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+        
+            h1{
+                text-align: center;
+                color: rgb(8, 8, 8);
+                
+            }
+            .form{
+                margin: auto;
+                padding: 10px 0px 10px 0px;
+                width: 500px;
+                background-color:rgba(136, 129, 129, 0.664);
+            }
+            .name{
+                
+                text-align: center; 
+            }
+            .gender{
+                color: black;
+                text-align: center;
+            }
+            .dob{
+                text-align: center;
+            }
+            .about{
+                text-align: center;
+            }
+            .file{
+                text-align: center;
+            }
+            .submit{
+               text-align: center;
+               
+            }
+
+        </style>
+        </head>
+        <a href="/display">show list</a>
+    </html>
+<body>
+
+    <h1>Resume upload page </h1>
+    <div class="form">
+    <form method="post" action="/data">
+        
+        <div class="name">
+        <label id="name"  for= "name">NAME</label>
+        <input type="text" name="name" id="name" value="">
+        </div>
+
+        <div class="gender">
+        <br><label name="gender">Gender</label>
+        <br><input type="radio" id="html" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="css" name="gender" value="female">
+        <label for="female">Female</label><br>
+        </div>
+
+        <div class="dob">
+        <br><label for="dob">Date of Birth</label>
+        <input type="date" name="dob" for="dob" id="dob">
+        </div>
+
+        <div class="about">
+        <br><label id="about"  for="about">About</label>
+        <br><textarea name="about" for="about" row="10" cols="50" width="10px">Tell about your self..</textarea>
+        </div>
+        <div class="file">
+        <br>,<label for="pdffile">Upload resume in pdf formate</label>
+        <br><input type="file" name="pdffile" id="pdffile">
+        </div>
+        
+        <div class="submit">
+        <br><input type="submit" name="submit" value="Submit">
+        </div>
+    
+    </form>
+    </div>
+
+
+</body>
+
+</html>
